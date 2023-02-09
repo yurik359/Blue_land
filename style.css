@@ -560,6 +560,31 @@ font-size: 20px;
 .clinic-history__r{
     padding-top: 30px;
 }
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__line-container{
+    display: flex;
+}
+
+.header-left{
+    padding-top: 30px;
+}
+.header-left h3 {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 56px;
+line-height: 74px;
+}
+.header-left h3 span {
+    color: #FFD700;
+}
+
+
 .clinic-history__r h3 {
     font-family: 'Inter';
 font-style: normal;
@@ -575,6 +600,41 @@ line-height: 74px;
     position: absolute;
      width: 65%; 
 }
+
+.header__line-container {
+    position: absolute;
+     width: 65%; 
+}
+.header__line-item{
+    height: 1px;
+    width: 100%;
+    border-bottom:1px solid grey;
+    position: relative;
+    top:106.5px ;
+    left: 5px;
+}
+
+
+
+.header__right {
+display: flex;
+text-align: right;
+}
+
+.header__right h3{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 60px;
+}
+.header__right h3 span {
+    display: inline-block;
+    
+    font-weight: 700;
+}
+
+
 .clinic-history__line {
     height: 1px;
     width: 100%;
@@ -583,24 +643,25 @@ line-height: 74px;
     top:106.5px ;
     left: 5px;
 }
+
 .clinic-history__glory h3 {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
     font-size: 56px;
     line-height: 60px;
+    text-align: right;
 }
 
 .clinic-history__glory h3 span {
     font-weight: 700;
     display: inline-block;
-    padding-left: 115px;
+  
     
 }
 
 .clinic-history__glory {
     display: flex;
-    align-self: start;
 }
 
 
@@ -608,15 +669,16 @@ line-height: 74px;
     margin-top: 3%;
     display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  
 }
 .Clinic-history__left-element img {
     max-width: 534px;
 }
 .Clinic-history__right-element {
     margin-top: 14px;
-    min-width: 200px;
-    flex-wrap: wrap;
+     
+    /* min-width: 200px; */
+    /* flex-wrap: wrap; */
 }
 .Clinic-history__text {
     max-width: 634px;
@@ -792,3 +854,151 @@ line-height: 24px;
 width: 100%;
     background: #F8FAFC
 }
+
+/* form block  */
+.form__header{
+
+}
+.form {
+}
+
+
+.form__main {
+    margin-top: 10%;
+    display: flex;
+}
+.form__image {
+}
+.form-item {
+    
+}
+form {
+    
+}
+.form__flex-container {
+    margin-top: 8%;
+    margin-left: 5%;;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.form__flex-container input,.form__input-doctor select {
+    width: 280px;
+    height: 40px;
+    border-radius: 15px;
+    border:1px solid grey;
+}
+.form__name-phone {
+   display: flex;
+   
+}
+.form__name {
+}
+.form__title-name,.form__title-phone {
+    padding-bottom: 10px;
+}
+.form__phone {
+}
+.form__title-phone {
+    padding-left: 44px;
+}
+.form__date-doctor {
+    display: flex;
+    margin-top: 30px;
+    
+   
+}
+.form__date {
+    margin-right: 12px;
+   
+}
+.form__date-title, .form__title-doctor {
+padding-bottom: 10px;
+}
+.form__input-date {
+    
+}
+.form__input-date img {
+position: relative;
+top: 4px;
+right: 12%;
+}
+.form__input-doctor {
+    margin-left: 12px;
+}
+
+.form__input-doctor select {
+    border-radius: 15px;
+ 
+    width: 285px;
+    height: 43px;
+}
+.form__title-doctor {
+}
+.form__input-message{
+    margin-top: 20px;
+    margin-left: 15px;
+}
+.form__input-message span {
+    padding-left: 5px;
+}
+.form__input-message textarea {
+    padding: 10px 10px;
+    resize: none;
+    border-radius: 15px;
+    margin-top: 10px;
+width: 600px;
+height: 170px;
+}
+.form__checkbox {
+    display: flex;
+  padding-left: 23px;
+    align-self: start;
+}
+.form__input-message input::placeholder{
+    transform: translateY(-65px);
+    padding-left: 10px;
+}
+.form__checkbox input{
+    margin-right: 20px;
+    width: 20px;
+    border-radius: 45px;
+}
+.form__submit-button button {
+background-color: #516EFF;
+border: none;
+width: 636px;
+height: 58px;
+border-radius: 15px;
+color:white;
+}
+
+
+#country-code{
+    
+    position: relative;
+    border:none;
+    left:50px;
+    padding: 0;
+    margin: 0;
+    max-width: 40px;
+}
+select option {
+    
+}
+.form__phone input {
+    
+}
+
+.form__phone input::placeholder{
+    padding-left: 45px;
+}
+
+.form__phone input::placeholder,#country-code{
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: #52525B;
+}
+
